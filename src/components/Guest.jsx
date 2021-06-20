@@ -1,5 +1,6 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect, useMemo} from "react";
 import 'bulma/css/bulma.css';
+
 
 const useCStyle=(init=true, styleClass="is-invisible")=>{
     let [style, setStyle] = useState(styleClass);
@@ -16,7 +17,7 @@ const useCStyle=(init=true, styleClass="is-invisible")=>{
     return [state, applyStyle, removeStyle]
 };
 
-export default function GuestSlot(props){
+const GuestSlot=(props)=>{
     let {_name, _status, _menuop} = props.guest; 
     const [name, setName] = useState(_name);
     const [status, setStatus] = useState(_status);
@@ -74,4 +75,11 @@ export default function GuestSlot(props){
         </div>
     )
 };
-
+export default function ShowGuest(props){
+    const [list, setList] = useState(props.list.Guests)
+    return(
+        <div className="container">
+            {list.map(guest=> <GuestSlot guest={guest}></GuestSlot>)}
+        </div>
+    )
+}
