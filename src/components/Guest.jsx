@@ -16,20 +16,20 @@ const GuestSlot=(props)=>{
     };
 
     return (
-        <div className="box">
-
-            <div className="field is-horizontal">
-                <label className="label is-normal p-2">Name</label>
+        <div className="box is-2by3">
+            <div className="field">
+                <label className="label">Name</label>
                 <div className="control">
                     <input className="input" 
                     type="text"
                     onChange={(e)=>{setName(e.target.value)}}
-                    value={name}
+                    val
+                    ue={name}
                     ></input>
                 </div>
             </div>
-            <div className="field is-grouped is-horizontal">
                 <label className="label">Will {name.split(" ")[0]} be attending?</label>
+            <div className="field is-grouped">
                 <div className="control">
                     <button className={status == 1? "button is-success" : "button"}
                     value = {1}
@@ -45,9 +45,9 @@ const GuestSlot=(props)=>{
                 </div>
             </div>
             <div className={status == 1? "" : "is-invisible"}>
-                <div className="field is-horizontal">
+                <div className="field">
                     <div className="control">
-                        <label className="label is-normal">Please Select a Menu Option</label>
+                        <label className="label">Please Select a Menu Option</label>
                         <select className="select" onChange={(e)=>updateMenu(e)}>
                             <option value = "0">Select a Meal Option</option>
                             <option value = "1">Sandwich</option>
