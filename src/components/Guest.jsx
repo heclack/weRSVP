@@ -6,7 +6,7 @@ const GuestSlot=(props)=>{
     const [name, setName] = useState(_name);
     const [status, setStatus] = useState(_status);
     const [menuop, setMenuOp] = useState(_menuop);
-    
+    const [complete, setComplete] = useState(false)
     const updateStatus = (e)=>{
         e.preventDefault();
         setStatus(e.target.value)
@@ -14,17 +14,17 @@ const GuestSlot=(props)=>{
     const updateMenu =(e)=>{
         setMenuOp(e.target.value)
     };
+    
 
     return (
-        <div className="box is-2by3">
+        <div className="box">
             <div className="field">
                 <label className="label">Name</label>
                 <div className="control">
-                    <input className="input" 
-                    type="text"
+                    <input className="input"
+                    type="text" 
                     onChange={(e)=>{setName(e.target.value)}}
-                    val
-                    ue={name}
+                    value={name}
                     ></input>
                 </div>
             </div>
