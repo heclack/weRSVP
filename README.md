@@ -4,14 +4,14 @@ PLEASE NOTE IF THE IMAGES ARE NOT SHOWING UP IN MARKDOWN, THE IMAGE FILES ARE LO
 Screenshots to describe how this simple project reduces friction with users.
 I have been spending quite a bit of time lately dealing with forms (job applications mostly).  Using user events to guide form fields is a way to reduce user friction and errors.
 This is a fairly simple form, from build we see this:
-[![Initial render](https://i.postimg.cc/KcpSHMV5/2021-07-12-5.png)](https://postimg.cc/mh95ctTc)
+[![Initial Render](https://i.postimg.cc/SxsdRgfB/2021-07-12.png)](https://postimg.cc/VdxnHBTg)
 
 But this isn't just a click and read form.  Notice how the user options change as we change our input values.
 If a guest is not attending we simply aren't going to give them an option to pick a meal.  Traditionally with web forms we have used language cues to indicate if the user should fill out the form, but using the power of js we can also give the user very obvious visual cues without text.  For this form, there is instructive text but I also utilized color and visibility to lead the user.
 [![Using Events to trigger form](https://i.postimg.cc/90ky6b5T/2021-07-12-4.png)](https://postimg.cc/QKpB5pMx)
 
 In this particular form you can even correct the name field and have the update the form text.
-[![Update text on input change](https://i.postimg.cc/W38MpjrM/2021-07-12-6.png)](https://postimg.cc/jwWWvpM5)
+[![Update Form text on input change](https://i.postimg.cc/dt0rjLZd/2021-07-12-8.png)](https://postimg.cc/qg9NkBLM)
 As you can see this is a simple example.  Interactive forms naturally lead the users to make the right choice quickly and intuitively.
 
 
